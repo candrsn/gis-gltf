@@ -87,3 +87,7 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+*.e4p
+.eric6project
+

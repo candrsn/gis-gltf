@@ -1,0 +1,7 @@
+# gis-gltf python modules
+pyassimp>=1.6
+GDAL>=2.1.2
+pylint>=1.5.0
+simplejson>=3.10
+shapely>=1.5.12
+

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <contributor>
+    <author>Blender User</author>
+    <authoring_tool>Blender 2.78.0 commit date:1970-01-01, commit time:00:00, hash:unknown</authoring_tool>
+  </contributor>
+  <created>2017-02-23T16:15:01</created>
+  <modified>2017-02-23T16:15:01</modified>
+  <unit name="meter" meter="1"/>
+  <up_axis>Z_UP</up_axis>
+  <library_images/>
+  <library_effects>
+    <effect id="mymaterial-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.7 0.7 0.7 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">0</float>
+            </shininess>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="mymaterial-material" name="mymaterial">
+      <instance_effect url="#mymaterial-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="Chamfer-mesh" name="Chamfer">
+      <mesh>
+        <source id="Chamfer-mesh-positions">
+          <float_array id="Chamfer-mesh-positions-array" count="192">30 10 9 30 10 0 0 10 0 0 10 9 30 0 9 30 0 0 1 9 10 29 9 10 25 0 0 9.981973 -0.4801639 0 25 -7 0 10 -7 0 0 3 0 0 -0.4801639 0 0 6 0 -2 6 0 -2 3 0 0 6 9 25 0 9 29 1 10 24 1 10 10.99724 -6 10 24 -6 10 10.97921 0.5198361 10 1 0.5198361 10 1 4 10 1 5 10 -1 4 10 -1 5 10 -2 6 9 -2 3 9 0 3 9 0 -0.4801639 9 9.981973 -0.4801639 9 10 -7 9 25 -7 9 4.990986 -0.4801639 4.5 10 -7 4.5 25 -7 4.5 10 -7 6.75 25 -7 6.75 10 -7 2.25 25 -7 2.25 14.78592 -7.199959 5.180012 14.78592 -7.199959 5.901276 25 -7 0 17.84247 -7.199959 5.937843 17.84247 -7.199959 5.216579 14.78592 -7.199959 -0.04125261 14.78592 -7.199959 0.6800114 14.78592 -7.199959 2.930011 17.84247 -7.199959 0.7165791 17.84247 -7.199959 2.966579 10 -7 6.75 10 -7 9 25 -7 9 25 -7 6.75 17.84247 -7.199959 -0.004684925 10 -7 0 10 -7 2.25 10 -7 4.5 25 -7 2.25 25 -7 4.5 17.79207 -7.199734 4.187344</float_array>
+          <technique_common>
+            <accessor source="#Chamfer-mesh-positions-array" count="64" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Chamfer-mesh-normals">
+          <float_array id="Chamfer-mesh-normals-array" count="123">0 1 0 1 0 0 0 0.7071068 0.7071068 0 0 -1 -1 0 0 -1 0 0 0 -1 0 0 -1 0 0.7071068 0 0.7071068 0 0 1 0 0 1 -0.7071068 0 0.7071068 0 -1 0 -0.9999963 -0.002764701 0 -0.9999962 -0.002764701 0 0 -0.7071068 0.7071068 0 -0.7071068 0.7071068 -0.7071041 -0.001955628 0.7071068 -0.7071037 -0.001955032 0.7071072 0 -0.7071067 0.7071069 0 -0.7071066 0.707107 -0.7071072 0 0.7071065 -0.7071064 0 0.7071073 -0.04174435 -0.9991284 0 -7.56489e-4 -0.9979986 0.06323236 0.02792602 -0.99961 0 0 0.02342295 -0.9997257 -0.04174429 -0.9991284 0 0.02792602 -0.99961 0 -0.04174435 -0.9991284 0 0.02792602 -0.99961 0 -0.04174435 -0.9991284 0 0.02792596 -0.99961 0 -0.9999962 -0.002765238 0 -0.9999963 -0.002765774 0 -0.04174435 -0.9991284 0 0 -0.9978748 0.06516134 0.02792596 -0.99961 0 0.01073133 0.4419032 -0.8969987 0.02792602 -0.99961 0 0.02792596 -0.99961 0</float_array>
+          <technique_common>
+            <accessor source="#Chamfer-mesh-normals-array" count="41" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Chamfer-mesh-vertices">
+          <input semantic="POSITION" source="#Chamfer-mesh-positions"/>
+        </vertices>
+        <polylist material="mymaterial-material" count="122">
+          <input semantic="VERTEX" source="#Chamfer-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Chamfer-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>0 0 1 0 2 0 3 0 0 0 2 0 4 1 5 1 1 1 0 1 4 1 1 1 6 2 7 2 0 2 6 2 0 2 3 2 1 3 5 3 8 3 9 3 10 3 11 3 9 3 8 3 10 3 9 3 1 3 8 3 12 3 9 3 13 3 14 3 9 3 12 3 15 3 12 3 16 3 15 3 14 3 12 3 2 3 1 3 9 3 2 3 9 3 14 3 3 4 2 4 14 4 17 5 3 5 14 5 4 6 18 6 8 6 4 7 8 7 5 7 7 8 19 8 4 8 7 8 4 8 0 8 20 9 19 9 7 9 21 9 22 9 23 9 22 10 20 10 23 10 20 9 7 9 23 9 24 9 23 9 25 9 25 9 23 9 26 9 27 9 25 9 28 9 25 9 26 9 28 9 23 9 7 9 6 9 26 9 23 9 6 9 17 11 6 11 3 11 26 11 6 11 17 11 17 0 14 0 15 0 29 0 17 0 15 0 30 4 29 4 15 4 30 4 15 4 16 4 31 12 30 12 16 12 31 12 16 12 12 12 32 4 31 4 12 4 32 4 12 4 13 4 13 12 36 12 32 12 33 12 36 12 9 12 33 13 9 13 11 13 33 14 41 14 37 14 34 9 55 9 35 9 41 9 60 9 37 9 18 1 42 1 10 1 18 1 10 1 8 1 19 15 20 15 18 15 19 16 18 16 4 16 21 17 23 17 33 17 21 18 33 18 34 18 33 15 24 15 32 15 23 19 24 19 33 19 22 20 21 20 34 20 22 15 34 15 35 15 24 21 25 21 31 21 24 22 31 22 32 22 18 8 22 8 35 8 20 8 22 8 18 8 27 15 30 15 31 15 25 15 27 15 31 15 30 11 28 11 29 11 27 11 28 11 30 11 28 2 26 2 17 2 28 2 17 2 29 2 49 12 48 12 57 12 44 12 51 12 52 12 11 9 59 9 41 9 38 9 61 9 42 9 42 9 45 9 10 9 39 9 54 9 34 9 35 9 56 9 40 9 37 9 53 9 39 9 10 9 58 9 11 9 40 9 62 9 38 9 44 23 53 23 43 23 46 24 54 24 44 24 46 25 56 25 55 25 57 26 58 26 45 26 50 27 59 27 49 27 52 28 61 28 62 28 43 29 60 29 50 29 47 30 62 30 56 30 49 31 58 31 48 31 51 32 45 32 61 32 13 12 9 12 36 12 33 12 32 12 36 12 39 33 34 33 33 33 33 34 11 34 41 34 37 33 39 33 33 33 34 9 54 9 55 9 41 9 59 9 60 9 18 1 35 1 40 1 38 1 42 1 18 1 18 1 40 1 38 1 57 12 44 12 43 12 50 12 49 12 57 12 57 12 43 12 50 12 47 12 46 12 44 12 44 12 57 12 51 12 52 12 47 12 44 12 11 9 58 9 59 9 38 9 62 9 61 9 42 9 61 9 45 9 39 9 53 9 54 9 35 9 55 9 56 9 37 9 60 9 53 9 10 9 45 9 58 9 40 9 56 9 62 9 44 35 54 35 53 35 46 36 55 36 54 36 46 37 47 37 56 37 57 38 48 38 58 38 50 29 60 29 59 29 52 39 51 39 61 39 43 35 53 35 60 35 47 40 52 40 62 40 49 29 59 29 58 29 51 28 57 28 45 28</p>
+        </polylist>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers/>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="node0" name="node0" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#Chamfer-mesh" name="node0">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mymaterial-material" target="#mymaterial-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>
